@@ -2,10 +2,37 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Усе про котів</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список завдань</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Чому коти чудові</h1>
-    <p>Коти багато сплять і муркочуть.</p>
+
+    <div class="task-card">
+        <h2>Список завдань</h2>
+        
+        <ul class="task-list">
+            <li class="task completed">
+                <span class="icon">✔</span>
+                <span class="text">Опанувати HTML та CSS</span>
+            </li>
+            
+            <li class="task completed">
+                <span class="icon">✔</span>
+                <span class="text">Опанувати Git та GitHub</span>
+            </li>
+            
+            <li class="task pending">
+                <span class="icon"></span>
+                <span class="text">Опанувати JavaScript</span>
+            </li>
+            
+            <li class="task pending">
+                <span class="icon"></span>
+                <span class="text">Опанувати Node.js</span>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>

@@ -1,0 +1,83 @@
+/* Загальні налаштування сторінки */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f8ff; /* Світло-блакитний фон, як на скриншоті */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* Контейнер списку */
+.task-card {
+    background-color: #ffffff;
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Заголовок */
+.task-card h2 {
+    margin: 0;
+    padding: 15px 20px;
+    background: linear-gradient(to bottom, #ffffff, #eeeeee);
+    border-bottom: 1px solid #dcdcdc;
+    color: #007b00; /* Темно-зелений */
+    font-size: 1.2rem;
+}
+
+/* Налаштування списку (прибираємо стандартні крапки) */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Окреме завдання */
+.task {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Прибираємо лінію під останнім завданням */
+.task:last-child {
+    border-bottom: none;
+}
+
+/* Базовий стиль для кружечка (іконки) */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+/* Стилі для ВИКОНАНИХ завдань */
+.completed .icon {
+    border: 2px solid #009900;
+    color: #009900;
+}
+
+.completed .text {
+    color: #009900;
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+}
+
+/* Стилі для НЕВИКОНАНИХ завдань */
+.pending .icon {
+    border: 2px solid #cccccc;
+}
+
+.pending .text {
+    color: #007b00;
+}
